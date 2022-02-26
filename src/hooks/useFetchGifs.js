@@ -14,14 +14,13 @@ export const useFetchGifs = ( category ) => {
         getGifs( category )
            .then( imgs => {
 
-               setTimeout( () => {
+              
 
                     setState({
                         data: imgs,
                         loading: false
                     });
 
-               },3000);
 
            })
 
